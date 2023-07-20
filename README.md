@@ -1,27 +1,36 @@
-# KalvadTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+#  KalvadTest
 
-## Development server
+This project was generated with Angular CLI version 16.1.0.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+KalvadTest is an Angular web application for managing books. The application contains a lazy-loaded module for books management, where the books are displayed in a swiper and as a list of chips.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##  Features
 
-## Build
+Lazy-loaded module for books management.
+Books displayed in a swiper for an interactive experience.
+Books listed as chips for a visually appealing layout.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+##  Prerequisites
 
-## Running unit tests
+Before running the application, ensure that you have the following installed:
+Node.js - Make sure to use the recommended LTS version.
+Angular CLI - Version 16.1.0 or higher.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##  Installation
 
-## Running end-to-end tests
+Clone the repository: git clone https://github.com/TamaraJammoul/KavaldTest.git
+Navigate to the project folder: cd your-repo
+Install the dependencies: npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##  Development Server
 
-## Further help
+Run ng serve for a development server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Linting
+To check for linting errors, you can run the following command:
+
+
+npm run lint
