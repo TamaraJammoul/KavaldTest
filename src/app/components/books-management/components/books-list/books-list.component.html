@@ -1,9 +1,9 @@
 <div class="books-list">
-    <h4 class="books-list-title">{{booksListsItem.title}}</h4>
+    <h4 class="books-list-title">{{booksList.title}}</h4>
     <mat-form-field class="chip-list">
         <mat-label>Books</mat-label>
         <mat-chip-grid cdkDropList (cdkDropListDropped)="drop($event)" #chipGrid aria-label="book selection">
-            <mat-chip-row cdkDrag class="chip" *ngFor="let book of books" (removed)="remove(book.id)">
+            <mat-chip-row cdkDrag class="chip" *ngFor="let book of booksList.books" (removed)="remove(book.id)">
                 {{book.title}}
                 <button matChipRemove [attr.aria-label]="'remove ' + book">
                     <mat-icon>cancel</mat-icon>
