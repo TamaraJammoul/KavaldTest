@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Add New List</h1>
+<form mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Books List Title</mat-label>
+        <input required [formControl]="bookTitleFormControl" matInput>
+        <mat-error *ngIf="bookTitleFormControl.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+</form>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button (click)="onSave()" color="primary" mat-raised-button>Save</button>
+</div>

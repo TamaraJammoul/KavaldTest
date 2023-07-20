@@ -1,0 +1,37 @@
+.book-card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+    width: 100px;
+    height: 150px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.mat-card-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mat-card-content {
+    text-align: center;
+    padding: 16px;
+}
+
+.mat-mdc-card-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+.books-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

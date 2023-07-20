@@ -1,0 +1,24 @@
+<div class="books-list">
+    <h4 class="books-list-title">{{booksListsItem.title}}</h4>
+    <mat-form-field class="chip-list">
+        <mat-label>Books</mat-label>
+        <mat-chip-grid cdkDropList (cdkDropListDropped)="drop($event)" #chipGrid aria-label="book selection">
+            <mat-chip-row cdkDrag class="chip" *ngFor="let book of books" (removed)="remove(book.id)">
+                {{book.title}}
+                <button matChipRemove [attr.aria-label]="'remove ' + book">
+                    <mat-icon>cancel</mat-icon>
+                </button>
+            </mat-chip-row>
+        </mat-chip-grid>
+        <input placeholder="New Book..." #bookInput [formControl]="bookFormControl" [matChipInputFor]="chipGrid"
+            [matAutocomplete]="auto" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" />
+        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onBookSelected($event)">
+            <mat-option *ngFor="let book of filteredBooks$ | async" [value]="book.id">
+                {{book.title}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+    <div class="delete-button-container">
+        <button (click)="onListDeleted()" mat-raised-button color="warn">Delete List</button>
+    </div>
+</div>

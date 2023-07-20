@@ -1,0 +1,10 @@
+<mat-card class="book-card">
+    <mat-card-header>
+        <div [style.background-image]="'url(' + book.image + ')'" class="book-image"></div>
+        <mat-card-title>{{ book.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Year: {{ book.year }}</p>
+        <p>Author: {{ book.author }}</p>
+    </mat-card-content>
+</mat-card>

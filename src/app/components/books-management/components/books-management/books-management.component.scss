@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 10px 30px;
+}
+
+.no-data-found {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

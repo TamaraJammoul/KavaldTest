@@ -1,0 +1,31 @@
+.books-list-title {
+    font-size: 16px;
+    width: 20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.books-list {
+    display: flex;
+    align-items: center;
+}
+
+.chip-list {
+    width: 60%;
+    padding: 20px;
+}
+
+.delete-button-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+::ng-deep .mat-mdc-chip.mdc-evolution-chip--with-trailing-action .mat-mdc-chip-action-label {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 150px;
+}
