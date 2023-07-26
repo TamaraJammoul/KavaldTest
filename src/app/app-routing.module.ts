@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { ApplicationRoutes } from './settings/application-routes';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: ApplicationRoutes.Empty,
     redirectTo: ApplicationRoutes.Books,
@@ -17,8 +16,3 @@ const routes: Routes = [
   },
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
