@@ -5,7 +5,8 @@
 }
 
 .container {
-    padding: 10px 30px;
+    padding: 10px 0px;
+    width: 100%;
 }
 
 .no-data-found {
@@ -13,4 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper {
+    padding: 0px 30px;
 }

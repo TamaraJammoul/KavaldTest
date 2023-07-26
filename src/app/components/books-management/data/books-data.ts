@@ -104,14 +104,14 @@ export const availableBooks: Book[] = [
     },
     {
         id: '9',
-        title: 'Harry Potter and the Sorcerer\'s Stone',
+        title: 'Harry Potter and the ',
         image: 'https://example.com/harry-potter-sorcerers-stone.jpg',
         year: 1997,
         author: 'J.K. Rowling',
     },
     {
         id: '10',
-        title: 'The Lord of the Rings: The Fellowship of the Ring',
+        title: 'The Lord of the Rings',
         image: 'https://example.com/lotr-fellowship-of-the-ring.jpg',
         year: 1954,
         author: 'J.R.R. Tolkien',

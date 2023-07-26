@@ -29,3 +29,25 @@
     white-space: nowrap;
     max-width: 150px;
 }
+
+
+/* Media query for mobile devices */
+
+@media (max-width: 767px) {
+    .books-list {
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .chip-list {
+        width: 100%;
+    }
+
+    .delete-button-container {
+        width: 100%;
+    }
+
+    .books-list-title {
+        width: 100%;
+    }
+}

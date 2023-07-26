@@ -1,11 +1,13 @@
 <div class="container">
     <app-available-books></app-available-books>
-    <div class="header">
-        <h2>Books Lists</h2>
-        <button (click)="onAddNewList()" mat-raised-button color="primary">Add New List</button>
-    </div>
-    <app-books-list [booksList]="list" *ngFor="let list of booksLists"></app-books-list>
-    <div class="no-data-found">
-        <h2 *ngIf="booksLists.length===0">No Lists Added</h2>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Books Lists</h2>
+            <button (click)="onAddNewList()" mat-raised-button color="primary">Add New List</button>
+        </div>
+        <app-books-list [booksList]="list" *ngFor="let list of booksLists"></app-books-list>
+        <div class="no-data-found">
+            <h2 *ngIf="booksLists.length===0">No Lists Added</h2>
+        </div>
     </div>
 </div>

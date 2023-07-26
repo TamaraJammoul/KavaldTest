@@ -1,8 +1,7 @@
-<div>
+<div class="available-list">
     <h1 class="title">Available Books List</h1>
-    <swiper-container #swiperRef slides-per-view="4" pagination="true" navigation="true" space-between="50"
-        initial-slide="0">
-        <swiper-slide *ngFor="let book of availableBooks">
+    <swiper-container class="swiper-container" navigation="true" pagination="true" #swiperContainer>
+        <swiper-slide class="swiper-slide" *ngFor="let book of availableBooks">
             <app-book-card [book]="book"></app-book-card>
         </swiper-slide>
     </swiper-container>

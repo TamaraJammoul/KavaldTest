@@ -7,3 +7,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.available-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
