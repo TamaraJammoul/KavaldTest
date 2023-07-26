@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { BooksList } from '@root/components/books-management/models/books-list.model';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
@@ -29,7 +29,8 @@ import { CdkDragDrop, DragDropModule, moveItemInArray } from '@angular/cdk/drag-
     MatAutocompleteModule,
     NgFor,
     DragDropModule
-  ]
+  ],
+  encapsulation: ViewEncapsulation.None,
 })
 export class BooksListComponent extends BaseComponent implements OnInit {
   @ViewChild('bookInput') bookInput: ElementRef<HTMLInputElement>;
